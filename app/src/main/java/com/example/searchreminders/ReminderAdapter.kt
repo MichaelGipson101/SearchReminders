@@ -48,12 +48,12 @@ class ReminderAdapter (
             holder.itemView.apply {
                 // make TextView refer to TextView in li_main layout resource
                 reminderTextView = findViewById<View>(R.id.reminderTextView) as TextView
-                // assign the name value in the current item to text attribute of
+                // assign the reminderText value in the current item to text attribute of
                 // TextView
                 reminderTextView!!.text = currentReminder.reminderText
                 // make TextView refer to TextView in li_main layout resource
                 dateTextView = findViewById<View>(R.id.dateTextView) as TextView
-                // assign the name value in the current item to text attribute of
+                // assign the date value in the current item to text attribute of
                 // TextView
                 dateTextView!!.text = currentReminder.date
             }
@@ -69,7 +69,7 @@ class ReminderAdapter (
         /**
          * This method gets called by the search method in the MainActivity
          * when the search button is clicked.  It will call the DBHandler method
-         * that searches for Reminders based on the specified search criteria.
+         * that searches for Reminders based on their priority.
          */
         fun search(dbHandler: DBHandler, key: String, value: String) {
             dbHandler?.search(key, value)

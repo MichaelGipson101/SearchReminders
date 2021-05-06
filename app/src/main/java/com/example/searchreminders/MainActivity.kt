@@ -44,18 +44,18 @@ class MainActivity : AppCompatActivity() {
         // populate the Reminder table in the database
         // these lines of code should be commented out after the
         // app is run the first time
-        /* addReminder("High Priority Reminder 1", "High", "2021-05-02")
+        addReminder("High Priority Reminder 1", "High", "2021-05-02")
         addReminder("High Priority Reminder 2", "High", "2021-05-03")
         addReminder("Medium Priority Reminder 1", "Medium", "2021-05-04")
         addReminder("Medium Priority Reminder 2", "Medium", "2021-05-05")
         addReminder("Low Priority Reminder 1", "Low", "2021-05-06")
-        addReminder("Low Priority Reminder 2", "Low", "2021-05-07") */
+        addReminder("Low Priority Reminder 2", "Low", "2021-05-07")
     }
 
     /**
      * This method populates a Reminder in the database.  It gets called when
      * the app launches.
-     * @param date Reminder text
+     * @param text Reminder text
      * @param priority Reminder priority
      * @param date Reminder date
      */

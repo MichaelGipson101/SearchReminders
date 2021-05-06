@@ -45,9 +45,9 @@ class DBHandler(context: Context?, cursorFactory: SQLiteDatabase.CursorFactory?)
     /**
      * This method gets called by the MainActivity when the app launches.
      * It inserts a new row in the Reminder table.
-     * @param name Reminder name
-     * @param major Reminder major
-     * @param year Reminder year
+     * @param text Reminder text
+     * @param priority Reminder priority
+     * @param date Reminder date
      */
     fun addReminders(text: String?, priority: String?, date: String?){
 
